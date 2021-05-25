@@ -18,7 +18,7 @@ function ChartContainer() {
 
   return (
     <>
-      <h1>iTunes Top 20</h1>
+      <h1>UK I-Tunes Top 20</h1>
       <ChartList loaded={loaded} chartList={chartList} />
     </>
   );
