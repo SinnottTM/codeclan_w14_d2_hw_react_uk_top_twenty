@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import ChartList from '../components/ChartList';
-import './ChartContainer.css'
 
 function ChartContainer() {
   const [chartList, setChartList] = useState({});
@@ -18,10 +17,10 @@ function ChartContainer() {
   }, []);
 
   return (
-    <div className="chart-container">
+    <>
       <h1>iTunes Top 20</h1>
       <ChartList loaded={loaded} chartList={chartList} />
-    </div>
+    </>
   );
 }
 

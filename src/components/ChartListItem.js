@@ -1,16 +1,17 @@
-import './ChartListItem.css';
 import ListenNowButton from './ListNowButton.js';
 
 function ChartListItem({ title, artist, coverArt, playLink }) {
   return (
-    <div className="ChartListItem">
+    <>
+      <br></br>
       <img src={coverArt} alt="cover art"></img>
-      <div className="SongInfo">
-        <p>{title}</p>
-        <p>{artist}</p>
-      </div>
+      <>
+        <p>{title} by {artist}</p>
+      </>
       <ListenNowButton playLink={playLink}/>
-    </div>
+      <br></br>
+      <br></br>
+    </>
   );
 }
 
